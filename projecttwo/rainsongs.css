@@ -1,0 +1,447 @@
+/*hex codes:
+
+blues:
+
+bright blue: #124B98
+dark blue: #0D2E46
+medium-dark blue: #30486C
+medium-light blue: #5C7FB5
+light blue: #ADC8DE 
+
+browns:
+dark brown: #473D37
+medium brown: #B3A28D
+light brown: #D9CDBF
+
+accents:
+white: #F2EEEB
+red: #BF4945
+orange: #F59F60 
+*/
+
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    text-align: center;
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+.bodycontainer{
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: space-between;
+justify-content: center;
+}
+
+.logoside{
+width: 20vw;
+height: 100vh;
+background-color: #30486C;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+gap: 0;
+border-right: 1px solid #30486C;
+box-shadow: 5px 0px 20px #30486C;
+z-index: 3;
+
+}
+
+.logocontainer{
+width: 20vw;
+aspect-ratio: 1/1;
+
+background-image: linear-gradient(to top, #30486C, #30486C, #9eabb5, #9eabb5);
+}
+
+.darkblue {
+background-image: linear-gradient(to top, #0D2E46, #0D2E46, #6e8290, #6e8290);
+}
+
+.darkbrown {
+background-image: linear-gradient(to top, #473D37, #473D37, #918b87, #918b87);
+}
+
+.logo {
+width: 100%;
+height: 100%;
+background-image: url(../img/raydotnetlogo_lightblue.svg);
+background-size: 100%;
+background-position: center;
+}
+
+.offwhite{
+background-image: url(../img/raydotnetlogo_offwhite.svg);
+}
+
+@keyframes scroll{
+0% {
+transform: translateY(0%);
+}
+100% {
+transform: translateY(80vw);
+}
+}
+
+.contentcontainer{
+width: 100vw;
+height: 100vh;
+background-image: linear-gradient(to top, #5C7FB5, #5C7FB5, #ADC8DE, #ADC8DE);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.brownstripe {
+background-color: #473D37;
+width: 3px;
+height: 100vh;
+position: absolute;
+left: 40%; 
+}
+
+.brownstripe2 {
+background-color: #473D37;
+height: 3px;
+width: 100vw;
+position: absolute;
+top: 30%; 
+}
+
+.bluestripe{
+background-image:linear-gradient(to bottom,#5C7FB5, #30486C) ;
+width: 2px;
+height: 100vh;
+position: absolute;
+left: 39%; 
+} 
+
+.bluestripe2 {
+background-color: #5C7FB5;
+height: 1px;
+width: 100vw;
+position: absolute;
+top: 28%; 
+}
+
+.menucontainer{
+width: 90%;
+height: 90%;
+border-radius: 20px;
+background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
+border-left: 1px solid #30486C;
+border-right: 1px solid #30486C;
+border-bottom: 1px solid #30486C;
+border-top: 1px solid #5C7FB5;
+z-index: 5;
+box-shadow: 0px 10px 10px 5px #30486C;
+margin: 0;
+
+}
+
+.header{
+width: 96%;
+height: 60px;
+background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
+border-radius: 20px 20px 0px 0px;
+font-family: 'AmberWide';
+font-size: 32px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 4%;
+color: #0D2E46;
+border-bottom: 1px solid #5C7FB5;
+}
+
+.projectcontainer{
+width: 92%;
+height: calc(88% - 60px);
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+overflow-y: scroll;
+gap: 5%;
+padding: 3% 4% 3% 4%;
+
+}
+
+.pagecontainer{
+width: 30vw;
+
+
+box-shadow: 0px 10px 10px 5px #30486C;
+}
+
+.page {
+width: 100%;
+aspect-ratio: 270/313;
+background-image: url("../img/fruits1.png");
+background-size: 100%;
+background-color: pink;
+}
+
+.two {
+background-image: url("../img/fruits1-2.png");
+background-size: 100%;
+background-color: #bd1c00;
+}
+
+.three {
+background-image: url("../img/fruits1-3.png");
+background-size: 100%;
+background-color: #db5f00;
+}
+
+.four {
+background-image: url("../img/fruits1-4.png");
+background-size: 100%;
+background-color: #edbe00;
+}
+
+.five {
+background-image: url("../img/fruits1-5.png");
+background-size: 100%;
+background-color: #007830;
+}
+
+.six {
+background-image: url("../img/fruits1-6.png");
+background-size: 100%;
+background-color: #004dab;
+}
+
+.seven {
+background-image: url("../img/fruits1-7.png");
+background-size: 100%;
+background-color: #5516a8;
+}
+
+.eight {
+background-image: url("../img/fruits1-8.png");
+background-size: 100%;
+background-color: pink;
+aspect-ratio: 1080/1670;
+}
+
+.nine {
+background-image: url("../img/fruits2-1.png");
+background-size: 100%;
+background-color: pink;
+aspect-ratio: 1080/1670;
+}
+
+.ten {
+background-image: url("../img/fruits2-2.png");
+background-size: 100%;
+background-color: #bd1c00;
+}
+
+.eleven {
+background-image: url("../img/fruits2-3.png");
+background-size: 100%;
+background-color: #db5f00;
+}
+
+.twelve {
+background-image: url("../img/fruits2-4.png");
+background-size: 100%;
+background-color: #edbe00;
+}
+
+.thirteen {
+background-image: url("../img/fruits2-5.png");
+background-size: 100%;
+background-color: #007830;
+}
+
+.fourteen {
+background-image: url("../img/fruits2-6.png");
+background-size: 100%;
+background-color: #004dab;
+}
+
+.fifteen {
+background-image: url("../img/fruits2-7.png");
+background-size: 100%;
+background-color: #5516a8;
+}
+
+.sixteen {
+background-image: url("../img/fruits2-8.png");
+background-size: 100%;
+background-color: pink;
+
+}
+
+.imgcontainer {
+width: 48vw;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+gap: 3vh;
+}
+
+.img {
+width: 48vw;
+height: 27vw;
+
+box-shadow: 0px 10px 10px 5px #30486C;
+}
+
+img{
+
+    width: 100%;
+}
+
+
+.button1{
+width: 174px;
+height: 15%;
+min-height: 40px;
+background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
+border-radius: 20px;
+font-family: 'SourceCodeLight';
+font-size: 18px;
+border-left: 1px solid #473D37;
+border-right: 1px solid #473D37;
+border-bottom: 1px solid #473D37;
+border-top: 1px solid #D9CDBF;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+left: -16%;
+}
+
+
+
+
+
+.button2{
+width: 174px;
+height: 15%;
+min-height: 40px;
+background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
+border-radius: 20px;
+font-family: 'SourceCodeLight';
+font-size: 18px;
+border-left: 1px solid #473D37;
+border-right: 1px solid #473D37;
+border-bottom: 1px solid #473D37;
+border-top: 1px solid #B3A28D;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+left: -36.5%
+}
+
+.button3{
+width: 174px;
+height: 15%;
+min-height: 40px;
+background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
+border-radius: 20px;
+font-family: 'SourceCodeLight';
+font-size: 18px;
+border-left: 1px solid #473D37;
+border-right: 1px solid #473D37;
+border-bottom: 1px solid #473D37;
+border-top: 1px solid #B3A28D;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+right: -13.5%;
+}
+
+.button4{
+width: 174px;
+height: 15%;
+min-height: 40px;
+background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
+border-radius: 20px;
+font-family: 'SourceCodeLight';
+font-size: 18px;
+border-left: 1px solid #473D37;
+border-right: 1px solid #473D37;
+border-bottom: 1px solid #473D37;
+border-top: 1px solid #D9CDBF;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+right: -36.5%;
+}
+
+.circlescontainer{
+height: 100%;
+width: 15%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8%;
+
+}
+
+.circle{
+width: 1vw;
+height: 1vw;
+border-radius: 50%;
+background-color: #473D37;
+box-shadow: 0px 0px 4px #5C7FB5;
+}
+
+@font-face {
+font-family: 'AmberWide';
+src: url(../fonts/ltamberwide.otf);
+}
+
+@font-face {
+font-family: 'SourceCodeLight';
+src: url(../fonts/SourceCodePro-Light.otf.woff);
+}
+
+@media screen and (max-width: 922px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
+    .button1 {
+        left: 0;
+    }
+    .button2 {
+        right: 0;
+        left: 0;
+    }
+    .button3 {
+        left: 0;
+    }
+    .button4 {
+        right: 0;
+    }
+
+    .logoside {
+        display: none;
+    }
+
+    .contentcontainer {
+        width: 100vw;
+    }
+
+    .brownstripe2 {
+        width: 100vw;
+    }
+    .bluestripe2 {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 850px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
+    .buttoncontainer{
+        gap: 2%;
+    }
+}
