@@ -1,0 +1,15 @@
+function openCrunchit(){
+window.open("../crunchit/combotemplate.html", "_self")
+}
+
+function openRayland(){
+window.open("../rayland/printtemplate.html", "_self")
+}
+
+function openFruits(){
+    window.open("../fruits/combotemplate.html", "_self")
+}
+
+function openSuspicious(){
+    window.open("../suspiciousapplegallery/webtemplate.html", "_self")
+}

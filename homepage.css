@@ -148,7 +148,7 @@ height: 60px;
 background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
 border-radius: 20px 20px 0px 0px;
 font-family: 'AmberWide';
-font-size: 32px;
+font-size: 30px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -159,17 +159,20 @@ border-bottom: 1px solid #5C7FB5;
 }
 
 .buttoncontainer{
-width: 100%;
+width: 94%;
 height: calc(100% - 60px);
-display: grid;
-place-items: center;
-gap: 5%;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+justify-content: space-between;
+gap: 10%;
+padding: 3%;
 }
 
 .button1{
 width: 174px;
-height: 15%;
-min-height: 40px;
+height: 42px;
+min-height: 42px;
 background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -182,7 +185,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-left: -16%;
 user-select: none;
 }
 
@@ -199,10 +201,10 @@ cursor: url(img/404.gif), pointer;
 
 
 .button2{
-width: 174px;
-height: 15%;
-min-height: 40px;
-background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
+width: 274px;
+height: 42px;
+min-height: 42px;
+background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
 font-size: 18px;
@@ -214,7 +216,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-left: -36.5%
+
 }
 
 .button2:hover{
@@ -229,8 +231,8 @@ cursor: url(img/404.gif), pointer;
 
 .button3{
 width: 174px;
-height: 15%;
-min-height: 40px;
+height: 42px;
+min-height: 42px;
 background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -243,7 +245,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-right: -13.5%;
+
 }
 
 .button3:hover{
@@ -253,13 +255,13 @@ color: #D9CDBF;
 border-left: 1px solid #D9CDBF;
 border-right: 1px solid #D9CDBF;
 border-bottom: 1px solid #D9CDBF;
-cursor: url(img/404.gif), pointer;
+cursor: pointer;
 }
 
 .button4{
 width: 174px;
-height: 15%;
-min-height: 40px;
+height: 42px;
+min-height: 42px;
 background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -272,7 +274,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-right: -36.5%;
+
 }
 
 .button4:hover{
