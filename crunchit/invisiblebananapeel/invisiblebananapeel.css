@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    text-align: center;
+    overflow: hidden;
+    font-family: 'jgs7';
+    font-size: 18px;    
+    max-width: 100vw;
+    image-rendering: pixelated;
+    background-color: #bababa;
+
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'Gothamono';
+src: url(https://humantooth.neocities.org/fonts/Gothamonov0.2-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.bodycontainer {
+width: 100vw;
+height: 100vh;
+text-align: center;
+display: grid;
+place-items: center;
+z-index: 0;
+
+}
+
+.gamecontainer {
+width: 1100px; 
+height: 560px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+border: 6px solid black;
+position: relative;
+background-image: url(../backgrounds/invisiblebananapeel.png);
+background-size: 100%;
+background-position: center;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+
+.headercontainer {
+
+padding: 10px;
+text-align: center;
+margin: auto;
+z-index: 5;
+position: absolute;
+top: 3%;
+
+}
+
+.header {
+font-family: 'AnalogueOS';
+font-size: 96px;
+color: black;
+}
+
+.subheader {
+position: absolute;
+top: 25%;
+}
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title> crunch it! </title>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wheelspin.css">
+    <link rel="icon" type="image/png" href="../img/crunchitfavicon.png">
+</head> 
+<body>
+    <div class="bodycontainer">
+        <div class="gamecontainer">
+            <div class="failcontainer"><span class="crumble">you crumbled!</span><br>&nbsp; click to try again.</div>
+            <div class="gifcontainer">
+                <video class = "gif"> <source src = "../backgrounds/itgetsyou.mp4" type = "video/mp4"></video>
+            </div> 
+        <div class="wheelcontainer">
+         <div class="container">   
+            <div class="spinbutton">SPIN</div>
+            <div class="wheel">
+                <div class = "number" style="--i:1;--clr:#fffeab;"> <span> ? </span></div>
+                <div class = "number" style="--i:2;--clr:#26de67;"> <span> ? </span></div>
+                <div class = "number" style="--i:3;--clr:#fffeab;"> <span> ? </span></div>
+                <div class = "number" style="--i:4;--clr:#26de67;"> <span> ? </span></div>
+                <div class = "number" style="--i:5;--clr:#fffeab;"> <span> ? </span></div>
+                <div class = "number" style="--i:6;--clr:#26de67;"> <span> ? </span></div>
+                <div class = "number" style="--i:7;--clr: #fffeab;"> <span> ? </span></div>
+                <div class = "number" style="--i:8;--clr:#26de67;"> <span> ? </span></div>
+            </div>
+            
+        </div>
+        </div>  
+        <div class="dialogue line1"> 
+            <div class="header"><span class="name">Green Design</span><button class="button1" onclick="hideOne()">x &nbsp;</button></div>
+            <div class="body"> 
+                <div class="greghead"></div>
+                <div class="text">Yayayayayay you won!</div> 
+            </div>
+            </div>
+
+            <div class="dialogue line2"> 
+            <div class="header"><span class="name">Green Design</span><button class="button1" onclick="hideTwo()">x &nbsp;</button></div>
+            <div class="body"> 
+                <div class="greghead"></div>
+                <div class="text">Aw man is Greg asking for your help again? I don't know why he makes us (or himself) do all this stuff... His cookies are fine.</div> 
+            </div>
+            </div>
+
+            <div class="dialogue line3"> 
+            <div class="header"><span class="name">Green Design</span><button class="button1" onclick="hideThree()">x &nbsp;</button></div>
+            <div class="body"> 
+                <div class="greghead"></div>
+                <div class="text">My memory kinda sucks, but I hope you don't FOURget this number. Haha. Sorry.</div> 
+            </div>
+            </div>
+
+            <div class="dialogue intro"> 
+            <div class="header" style="background-color: #da1c44"><span class="name">You</span><button class="button1" onclick="hideIntro()">x &nbsp;</button></div>
+            <div class="introbody"> 
+                <div class="yourhead"></div>
+                <div class="text">Click the button to spin the wheel! It may or may not land on the right spot... </div> 
+            </div>
+        </div>
+
+        <div class="time">60</div>
+        <div class = "nope"> nope </div>
+    
+        </div>
+       <!--<div class="failcontainer"><span class="crumble">inefficient!</span><br>&nbsp; click to try again </div>
+            <div class="gifcontainer">
+                <video class = "gif"> <source src = "../backgrounds/itgetsyou.mp4" type = "video/mp4"></video>
+            </div>-->
+    </div>
+    <script src="wheelspin.js"></script>
+</body> 
+</html>

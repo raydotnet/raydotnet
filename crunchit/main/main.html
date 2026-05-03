@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <title> crunch it! </title>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="../img/crunchitfavicon.png">
+</head> 
+<body>
+    <div class="bodycontainer">
+        <div class="gamecontainer">
+            <div class="failcontainer"><span class="crumble">you crumbled!</span><br>&nbsp; click to try again.</div>
+            <div class="gifcontainer">
+                <video class = "gif"> <source src = "../backgrounds/itgetsyou.mp4" type = "video/mp4"></video>
+            </div>
+            <canvas> </canvas>
+
+            <!--invisible banana peel-->
+            <!--<div class="invisiblebananapeel"></div>
+                <div class="invisiblebananapeel" style = "top: 170px; left: 720px"></div>
+                <div class="invisiblebananapeel" style = "top: 150px; left: 940px"></div>
+                <div class="invisiblebananapeel" style = "top: 150px; left: 580px"></div>
+                <div class="invisiblebananapeel" style = "top: 170px; left: 170px"></div>
+                <div class="invisiblebananapeel" style = "top: 520px; left: 760px"></div>
+                <div class="invisiblebananapeel" style = "top: 480px; left: 160px"></div>
+                <div class="invisiblebananapeel" style = "top: 410px; left: 290px"></div>
+                <div class="invisiblebananapeel" style = "top: 400px; left: 860px"></div>
+                <div class="invisiblebananapeel" style = "top: 460px; left: 580px"></div>
+        -->
+            <!--dialogue boxes-->
+
+            <div class="text1"><div class="textheader">Greg Design</div>I'm so embarassed, I can't even go into the kitchen :(((( HELP ME</div>
+            <div class="text2"><div class="textheader2">greg 2</div>Hey I'm bored do you wanna draw<br><ul><li class="yellowhover" style ="cursor: pointer">that's a complicated question</li></ul></div>
+            <div class="text3"><div class="textheader2">Green Design</div>I dunno what Mr. Blue Guy's deal is; I like green a normal amount.<br><ul><li class="greenhover" style ="cursor: pointer" >I believe you</li></ul></div>
+                <div class="text3point5"><div class="textheader2">Green Design</div>You look tired. Do you wanna play a game with me?<br><ul><li class="greenhover greenhover2" style ="cursor: pointer" >sure thanks</li></ul></div>
+            <div class="text4"><div class="textheader2">Blue Blueman</div>welcome to the bluethroom<br><ul><li class="bluehover" style ="cursor: pointer" >why is there purple then</li></ul></div>
+                <div class="text4point3"><div class="textheader2">Blue Blueman</div>it's next to blue so I barely tolerate it<br><ul><li class="bluehover bluehover2" style ="cursor: pointer">cool</li></ul></div>
+                <div class="text4point6"><div class="textheader2">Blue Blueman</div>play my blue game<br><ul><li class="bluehover bluehover3" style ="cursor: pointer" >fine</li></ul></div>
+            <div class="text5"><div class="textheader2">GREAT DESIGN!</div>IT HIT THE CORNER I SAW IT<br><ul><li class="purplehover" style ="cursor: pointer" >sure buddy</li></ul></div>
+                <div class="text5point5"><div class="textheader2">GREAT DESIGN!</div>LOOK<br><ul><li class="purplehover purplehover2" style ="cursor: pointer" >[look]</li></ul></div>
+            <div class="text6"><div class="textheader2">Greg Design ^_^</div>You look like you're in a rush. Why not slow down and enjoy the time we have together? <br><ul><li class="lightorangehover" style ="cursor: pointer">I don't wanna</li></ul></div>
+            <div class="text7"><div class="textheader2">G Design</div>I'll tell you the combination, but only if you play a song for me.<br><ul><li class="orangehover" style ="cursor: pointer" >ugh fine</li></ul></div>
+                <div class="text7point5"><div class="textheader2">G Design</div>FINALLY. I knew keeping a piano in my pocket would come in handy.<br><ul><li class="orangehover orangehover2" style ="cursor: pointer" >[fulfill his demands]</li></ul></div>
+            <div class="text8"><div class="textheader3">g regdesig n</div>._.<br><ul><li class="greyhover"style ="cursor: pointer" >hi</li></ul></div>
+                <div class="text8point3"><div class="textheader3">g regdesig n</div>.___.<br><ul><li class="greyhover greyhover2" style ="cursor: pointer" >?</li></ul></div>
+                <div class="text8point6"><div class="textheader3">g regdesig n</div>.______.<br><ul><li class="greyhover greyhover3" style ="cursor: pointer" >????</li></ul></div>
+                <div class="text8point9"> <div class="textheader3">g regdesig n</div>Find it for yourself.<br><ul><li class="greyhover greyhover4" style ="cursor: pointer" >okay</li></ul></div>
+
+            <div class="safehover"></div>
+
+            <div class="safecontainer">
+            <div class="safe">
+                <div class="safedoor">
+                    <div class="insidedoor">
+                        <div class="safehandle"></div>
+                    </div>
+                </div>
+                <form class="keypad">
+                    <input type="text" id="screen" placeholder="GROGBV"></input>
+                    <div class="numbers">
+                        <div class="numberbutton one" onclick="writeNumbers(this)">1</div>
+                        <div class="numberbutton two" onclick="writeNumbers(this)">2</div>
+                        <div class="numberbutton three" onclick="writeNumbers(this)">3</div>
+                        <div class="numberbutton four" onclick="writeNumbers(this)">4</div>
+                        <div class="numberbutton five" onclick="writeNumbers(this)">5</div>
+                        <div class="numberbutton six" onclick="writeNumbers(this)">6</div>
+                        <div class="numberbutton seven" onclick="writeNumbers(this)">7</div>
+                        <div class="numberbutton eight" onclick="writeNumbers(this)">8</div>
+                        <div class="numberbutton nine" onclick="writeNumbers(this)">9</div>
+                        <input class="clearbutton ten" type="reset" value="C"></input>
+                        <div class="numberbutton eleven" onclick="writeNumbers(this)">0</div>
+                        <div class="numberbutton twelve" onclick="enter()">E</div>
+                        
+                    </div>
+                    
+                </form>
+            </div>
+            </div>
+
+            <div class="dialogue intro"> 
+            <div class="dialogueheader" style="background-color: #da1c44"><span class="name">You</span><button class="button0" onclick="hideIntro()">x &nbsp;</button></div>
+            <div class="introbody"> 
+                <div class="yourhead"></div>
+                <div class="dialoguetext"> I guess we'll just do what he says. Don't want that thing getting him again... </div> 
+            </div>
+        </div>
+
+            <div class="pressa">press A to access the safe</div>
+            <div class="pressl">press L to leave the safe</div>
+            <div class="nope">nope</div>
+
+            <div class="time">1123</div>
+        </div>
+
+        <audio preload ="auto">
+        <source src = "../audio/crunchitEP.flac" type="audio/flac"></source>
+    </audio>
+        
+         
+    </div>
+    <script src="main.js"></script>
+</body> 
+</html>

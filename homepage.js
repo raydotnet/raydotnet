@@ -13,3 +13,7 @@ window.open("socials/socials.html", "_self")
 function openConnect() {
 window.open("connect/connect.html", "_self")
 }
+
+function openCrunchit() {
+    window.open("crunchit/index.html");
+}

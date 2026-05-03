@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    text-align: center;
+    overflow: hidden;
+   
+    max-width: 100vw;
+    image-rendering: pixelated;
+    background-color: #f44200;
+
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'Gothamono';
+src: url(https://humantooth.neocities.org/fonts/Gothamonov0.2-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.bodycontainer {
+width: 100vw;
+height: 100vh;
+text-align: center;
+display: grid;
+place-items: center;
+z-index: 0;
+
+}
+
+.gamecontainer {
+width: 1100px; 
+height: 560px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+border: 6px solid black;
+position: relative;
+background-image: url(../backgrounds/pianobackground.png);
+background-size: 100%;
+background-position: center;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+.time {
+width: 100px;
+height: 100px;
+padding: 10px;
+padding-bottom: 0;
+padding-top: 40px;
+font-family: 'AnalogueOS';
+font-size: 60px;
+position: absolute;
+top: 10px;
+right: 15px; 
+border: 6px solid black;
+text-align: center;
+background-color: white;
+}
+
+.gifcontainer {
+
+width: 1100px;
+height: 560px;
+text-align: center;
+z-index: 0;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+
+}
+
+.gif {
+width: 1100px;
+visibility: hidden;
+z-index: 0;
+overflow: hidden;
+}
+
+.failcontainer {
+width: 1100px;
+height: 560px;
+background-color: black;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: 'jgs7';
+font-size: 18px;
+color: white;
+visibility: hidden;
+z-index: 0;
+user-select: none;
+}
+
+.crumble {
+font-family: 'AnalogueOS';
+font-size: 96px;
+}
+
+.rainbowcontainer{
+width: 1100px;
+height: 460px;
+position: absolute;
+top: 0;
+font-family: 'AnalogueOS';
+font-size: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0px;
+}
+
+.rainbow {
+width: 100px;
+height: 460px;
+border: 4px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+user-select: none;
+}
+
+.rainbow:hover{
+color: white;
+cursor: pointer;
+}
+
+.red, .red2 {
+background-color: #da1c44;
+
+}
+
+.orange, .orange2{
+background-color: #fa9202;
+}
+
+.yellow, .yellow2 {
+background-color: #fffeab;
+}
+
+.green, .green2 {
+background-color: #26de67;
+}
+
+.blue {
+background-color: #7ec4ef;
+}
+
+.violet {
+background-color: #a59dff;
+}
+
+.grey {
+    background-color: #bababa;
+}
+
+.pianocontainer {
+border: 6px solid black;
+background-color: black;
+width: 1100px;
+height: 100px;
+position: absolute;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0px;
+}
+
+.key{
+border: 2px solid black;
+width: 100px;
+height: 60px;
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "jgs7";
+font-size: 24px;
+padding-top: 40px;
+}
+
+
+
+.C {
+    clip-path: polygon(0 0, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+.D {
+    clip-path: polygon(0 47%, 35% 47%, 35% 0%, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+.E{
+    clip-path: polygon(0 47%, 35% 47%, 35% 0%, 100% 0, 100% 100%, 0 100%);
+}
+
+.F {
+    clip-path: polygon(0 0, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+.G {
+    clip-path: polygon(0 47%, 35% 47%, 35% 0%, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+.A {
+    clip-path: polygon(0 47%, 35% 47%, 35% 0%, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+
+.B{
+    clip-path: polygon(0 47%, 35% 47%, 35% 0%, 100% 0, 100% 100%, 0 100%);
+}
+
+.highC {
+    clip-path: polygon(0 0, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+.highD {
+    clip-path: polygon(0 47%, 35% 47%, 35% 0%, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+.highE{
+    clip-path: polygon(0 47%, 35% 47%, 35% 0%, 100% 0, 100% 100%, 0 100%);
+}
+.highF {
+    clip-path: polygon(0 0, 65% 0%, 65% 47%, 100% 47%, 100% 100%, 0 100%);
+}
+
+
+.nope {
+width: 50px;
+height: 50px;
+padding: 20px;
+background-color: white;
+border: 4px solid black;
+font-family: 'jgs7';
+font-size: 18px;
+position: absolute; 
+top: 50px;
+left: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+visibility: hidden;
+}
+
+.two {
+top: 270px;
+left: 140px;
+}
+
+.three {
+top: 50px;
+left: 230px;
+}
+
+.four {
+top: 270px;
+left: 320px;
+}
+
+.five {
+    top: 50px;
+    left: 410px;
+}
+
+.six {
+top: 270px;
+left: 500px;
+}
+
+.seven {
+top: 50px;
+left: 590px;
+}
+
+.eight {
+top: 270px;
+left: 680px;
+}
+
+.nine {
+top: 50px;
+left: 770px;
+}
+
+.ten {
+top: 270px;
+left: 860px;
+}
+
+.dialogue {
+
+
+z-index: 8;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.button1 {
+background-color: transparent;
+border: none;
+font-family: "AnalogueOS"; 
+font-size: 38px;
+padding: 0px;
+cursor: pointer;
+}
+
+.button1:hover {
+color: white;
+}
+
+.header {
+background-color: #f44200;
+width: 524px;
+height: 27px;
+border: 5px solid black;
+text-align: left;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 16px;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 500px;
+height: 120px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 10px 20px;
+text-align: justify;
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+}
+
+.greghead {
+background-image: url(../gregfaces/smirkinggreg.png);
+background-size: 150px;
+width: 100px;
+height: 120px;
+background-position: -30px 6px;
+}
+
+.text {
+width: 400px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+font-family: 'jgs7';
+font-size: 18px;
+flex-direction: column;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+
+.name {
+font-family:"jgs7";
+font-size: 18px;
+}
+
+
+.line1 {
+position: absolute;
+left: 20px;
+top: 20px;
+visibility:hidden;
+}
+
+.line2 {
+position: absolute;
+right: 20px;
+top: 180px;
+visibility: hidden;
+}
+
+.line3 {
+position: absolute;
+left: 20px;
+bottom: 20px;
+visibility: hidden;
+}
+
+.yourhead {
+background-image: url(../gregfaces/yourface.png);
+background-size: 90px 105px;
+width: 90px;
+height: 105px;
+background-position: center;
+
+}
+
+.introbody {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 500px;
+height: 120px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 10px 20px;
+text-align: justify;
+display: flex;
+gap: 16px;
+justify-content: center;
+align-items: center;
+}
+
+.intro{
+position: absolute;
+top: 150px;
+left: 270px;
+}

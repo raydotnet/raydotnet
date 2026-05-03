@@ -1,0 +1,449 @@
+body {
+    margin: 0;
+    box-sizing: border-box; 
+    text-align: center;
+    overflow: hidden;
+   
+    max-width: 100vw;
+    image-rendering: pixelated;
+    background-color: #da1c44;
+    
+}
+
+@font-face {                  
+font-family: 'AnalogueOS';
+src: url(https://humantooth.neocities.org/fonts/AnalogueOS-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'Gothamono';
+src: url(https://humantooth.neocities.org/fonts/Gothamonov0.2-Regular.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+@font-face {                  
+font-family: 'jgs7';
+src: url(https://humantooth.neocities.org/fonts/jgs7.woff) format('woff');
+font-weight: normal;
+font-style: normal;
+} 
+
+.bodycontainer {
+width: 100vw;
+height: 100vh;
+text-align: center;
+display: grid;
+place-items: center;
+z-index: 0;
+
+}
+
+.gamecontainer {
+width: 1100px; 
+height: 560px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+border: 6px solid black;
+position: relative;
+gap: 40px;
+background-image: url("../homebg.png");
+background-size: 1100px;
+
+}
+
+
+.dialogue {
+
+/*visibility: hidden;*/ 
+z-index: 6;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0;
+}
+
+.button1 {
+background-color: transparent;
+border: none;
+font-family: "AnalogueOS"; 
+font-size: 38px;
+padding: 0px;
+cursor: pointer;
+}
+
+.header {
+background-color: #da1c44;
+width: 524px;
+height: 27px;
+border: 5px solid black;
+text-align: left;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-left: 16px;
+padding-top: 5px;
+padding-bottom: 4px;
+font-family: 'AnalogueOS'; 
+font-size: 38px;
+}
+
+.body {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 500px;
+height: 120px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 10px 20px;
+text-align: justify;
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+}
+
+.greghead {
+background-image: url(../gregfaces/sadgregface.png);
+background-size: 150px;
+width: 100px;
+height: 120px;
+background-position: -30px 6px;
+}
+
+.text {
+width: 400px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+font-family: 'jgs7';
+font-size: 18px;
+flex-direction: column;
+border-top: 2px solid black;
+border-bottom: 2px solid black;
+}
+
+.name {
+font-family:"jgs7";
+font-size: 18px;
+}
+
+.line1 {
+position: absolute;
+left: 20px;
+top: 20px;
+visibility: hidden;
+}
+
+.line2 {
+position: absolute;
+right: 20px;
+top: 180px;
+visibility: hidden;
+}
+
+.line3 {
+position: absolute;
+left: 20px;
+bottom: 20px;
+visibility: hidden;
+}
+
+.next {
+font-family: "AnalogueOS";
+font-size: 45px;
+padding: 10px 14px 2px 14px;
+width: 160px;
+background-color: #da1c44;
+border: 4px solid black;
+position: absolute;
+bottom: 20px;
+right: 20px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.next:hover {
+color: white;
+background-color: black;
+border-color: #da1c44;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+a{
+text-decoration: none;
+color: white;
+}
+
+.time {
+width: 100px;
+height: 50px;
+padding: 10px;
+padding-bottom: 0;
+padding-top: 0px;
+font-family: 'AnalogueOS';
+font-size: 36px;
+position: absolute;
+top: 294px;
+left: 154px;
+
+text-align: center;
+background-color: transparent;
+}
+
+.gifcontainer {
+
+width: 100vw;
+text-align: center;
+z-index: 20;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.gif {
+width: 100vw;
+visibility: hidden;
+}
+
+.failcontainer {
+width: 100vw;
+height: 100vh;
+background-color: black;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: 'jgs7';
+font-size: 18px;
+color: white;
+visibility: hidden;
+}
+
+.crumble {
+font-family: 'AnalogueOS';
+font-size: 96px;
+}
+
+.headercontainer {
+
+padding: 10px;
+text-align: center;
+margin: auto;
+z-index: 5;
+position: absolute;
+top: 0;
+left: 33%;
+}
+
+.yourhead {
+background-image: url(../gregfaces/yourface.png);
+background-size: 90px 105px;
+width: 90px;
+height: 105px;
+background-position: center;
+
+}
+
+.introbody {
+background-color: white;
+border: 5px solid black;
+border-top: none;
+width: 500px;
+height: 120px;
+font-family: "jgs7";
+font-size: 18px;
+padding: 10px 20px;
+text-align: justify;
+display: flex;
+gap: 16px;
+justify-content: center;
+align-items: center;
+}
+
+.intro{
+position: absolute;
+top: 150px;
+left: 270px;
+}
+
+.endingheader {
+font-family: 'AnalogueOS';
+font-size: 96px;
+color: #da1c44;
+text-shadow: -5px 0px black;
+}
+
+.menucontainer {
+width: 500px;
+height: 252px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 35.25%;
+left: 26.5%;
+
+
+
+}
+
+.menu {
+padding: 7px 5px;
+font-family: 'AnalogueOS';
+font-size: 45px;
+color: black; 
+
+width: 50%;
+/**/
+
+
+}
+
+
+.logocontainer {
+width: 408px;
+height: 252px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+position: absolute;
+top: 35.25%;
+left: 30%;
+
+z-index: 2;
+
+}
+
+.logo {
+
+width: 500px;
+height: 500px;
+background-image: url(../img/crunchitlogo.png);
+background-size: 100%;
+animation: flicker 1s infinite alternate ease-in-out forwards;
+transform: translate(-4px, -6px);
+cursor: pointer;
+
+}
+
+@keyframes flicker {  
+
+    0% { 
+        visibility: visible;
+       
+    }
+
+    
+
+    80% {
+        visibility: visible;
+    }
+
+    90% {
+        visibility: hidden;
+    }
+    
+  
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+.thankyou {
+    width: 140px;
+    height: 200px;
+    font-family: 'jgs7';
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    
+}
+
+.credits {
+    width: 180px;
+    height: 200px;
+    font-family: 'jgs7';
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 64px;
+    
+}
+
+
+.line0 {
+
+visibility: hidden;
+}
+
+
+.button0 {
+background-color: transparent;
+border: none;
+font-family: "AnalogueOS"; 
+font-size: 38px;
+padding: 0px;
+cursor: pointer;
+color: black;
+animation: blink 2s 0s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: black;
+    }
+
+    90% {
+        color: black;
+    }
+
+    95% {
+        color: white;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+a {
+color: black;
+}
+ul{
+    text-align: left
+}
+a:hover {
+color: #da1c44;
+}
+
+
+
+

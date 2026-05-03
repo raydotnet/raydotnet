@@ -1,5 +1,5 @@
 function openCrunchit(){
-window.open("../crunchit/combotemplate.html", "_self")
+window.open("../crunchitdoc/combotemplate.html", "_self")
 }
 
 function openRayland(){
