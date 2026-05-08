@@ -1,5 +1,5 @@
 function openCrunchIt(){
-window.open("https://raydotnet.github.io/crunchit/")
+window.open("https://raydot.net/crunchit/")
 }
 
 function openYoutube(){
