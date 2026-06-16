@@ -159,17 +159,20 @@ border-bottom: 1px solid #5C7FB5;
 }
 
 .buttoncontainer{
-width: 100%;
+width: 94%;
 height: calc(100% - 60px);
-display: grid;
-place-items: center;
-gap: 5%;
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+justify-content: space-between;
+gap: 10%;
+padding: 3%;
 }
 
 .button1{
 width: 174px;
-height: 15%;
-min-height: 40px;
+height: 42px;
+min-height: 42px;
 background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -182,18 +185,26 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-left: -16%;
+user-select: none;
 }
 
 
-
+.button1:hover{
+background-image:none;
+background-color: #473D37;
+color: #D9CDBF;
+border-left: 1px solid #D9CDBF;
+border-right: 1px solid #D9CDBF;
+border-bottom: 1px solid #D9CDBF;
+cursor: pointer;
+}
 
 
 .button2{
-width: 174px;
-height: 15%;
-min-height: 40px;
-background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
+width: 274px;
+height: 42px;
+min-height: 42px;
+background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
 font-size: 18px;
@@ -205,13 +216,23 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-left: -36.5%
+
+}
+
+.button2:hover{
+background-image:none;
+background-color: #473D37;
+color: #D9CDBF;
+border-left: 1px solid #D9CDBF;
+border-right: 1px solid #D9CDBF;
+border-bottom: 1px solid #D9CDBF;
+cursor: pointer;
 }
 
 .button3{
 width: 174px;
-height: 15%;
-min-height: 40px;
+height: 42px;
+min-height: 42px;
 background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -224,13 +245,23 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-right: -13.5%;
+
+}
+
+.button3:hover{
+background-image:none;
+background-color: #473D37;
+color: #D9CDBF;
+border-left: 1px solid #D9CDBF;
+border-right: 1px solid #D9CDBF;
+border-bottom: 1px solid #D9CDBF;
+cursor: pointer;
 }
 
 .button4{
 width: 174px;
-height: 15%;
-min-height: 40px;
+height: 42px;
+min-height: 42px;
 background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -243,7 +274,31 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
-right: -36.5%;
+
+}
+
+.button4:hover{
+background-image:none;
+background-color: #473D37;
+color: #D9CDBF;
+border-left: 1px solid #D9CDBF;
+border-right: 1px solid #D9CDBF;
+border-bottom: 1px solid #D9CDBF;
+cursor: pointer;
+}
+
+.textcontainer{
+
+
+/*background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);*/
+z-index: 5;
+/*box-shadow: 0px 10px 10px 5px #30486C;*/
+font-family: 'SourceCodeLight';
+font-size: 18px;
+padding: 20px;
+text-align: left;
+background-color: #473D37;
+color: #D9CDBF;
 }
 
 .circlescontainer{
@@ -274,20 +329,63 @@ font-family: 'SourceCodeLight';
 src: url(../fonts/SourceCodePro-Light.otf.woff);
 }
 
+
+@media screen and (max-width: 1360px){
+.button1{
+font-size: 16px;
+}
+
+.button2{
+font-size: 16px;
+}
+
+.button3{
+font-size: 16px;
+}
+
+.button4{
+font-size: 16px;
+}
+
+.textcontainer{
+font-size: 16px;
+}
+
+.header{
+font-size: 28px;
+}
+
+}
+
+@media screen and (max-width: 1120px){
+.button1{
+font-size: 14px;
+}
+
+.button2{
+font-size: 14px;
+}
+
+.button3{
+font-size: 14px;
+}
+
+.button4{
+font-size: 14px;
+}
+
+.textcontainer{
+font-size: 16px;
+}
+
+.header{
+font-size: 26px;
+}
+
+}
+
 @media screen and (max-width: 922px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
-    .button1 {
-        left: 0;
-    }
-    .button2 {
-        right: 0;
-        left: 0;
-    }
-    .button3 {
-        left: 0;
-    }
-    .button4 {
-        right: 0;
-    }
+    
 
     .logoside {
         display: none;
@@ -303,10 +401,91 @@ src: url(../fonts/SourceCodePro-Light.otf.woff);
     .bluestripe2 {
         width: 100vw;
     }
+
+    .row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .row2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .webcontainer {
+        width: 100%;
+    }
+
+    .linkcontainer {
+        width: 100%;
+        height: 54px;
+    }
+
+    .extra {
+        display: none;
+    }
+
+    .button1 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+        width: 100%;
+    }
+
+    .button2 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+        width: 100%;
+    }
+
+    .button3 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+        width: 100%;
+    }
+    .button4 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+        width: 100%;
+    }
+
+    .textcontainer {
+        width: 95%;
+        text-align: center;
+    }
+    .printcontainer {
+        width: 90%;
+    }
+    .circlescontainer {
+        display: none;
+    }
+    .buttoncontainer {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
 }
 
 @media screen and (max-width: 850px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
     .buttoncontainer{
         gap: 2%;
+    }
+
+     .linkcontainer {
+        width: 100%;
+       
+    }
+
+    .textcontainer {
+        width: 90%;
     }
 }

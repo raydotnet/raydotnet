@@ -13,3 +13,19 @@ function openFruits(){
 function openSuspicious(){
     window.open("../suspiciousapplegallery/webtemplate.html", "_self")
 }
+
+function openWindsongs(){
+    window.open("../windsongs/windsongs.html", "_self")
+}
+
+function openRainsongs(){
+    window.open("../rainsongs/rainsongs.html", "_self")
+    }
+
+function openMisc(){
+    window.open("../digitalcollage/digitalcollage.html", "_self")
+}
+
+function openSemiquaver(){
+    window.open("../semiquaver/semiquaver.html", "_self")
+}

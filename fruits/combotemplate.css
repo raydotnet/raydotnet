@@ -441,20 +441,63 @@ font-family: 'SourceCodeLight';
 src: url(../fonts/SourceCodePro-Light.otf.woff);
 }
 
+
+@media screen and (max-width: 1360px){
+.button1{
+font-size: 16px;
+}
+
+.button2{
+font-size: 16px;
+}
+
+.button3{
+font-size: 16px;
+}
+
+.button4{
+font-size: 16px;
+}
+
+.textcontainer{
+font-size: 16px;
+}
+
+.header{
+font-size: 28px;
+}
+
+}
+
+@media screen and (max-width: 1120px){
+.button1{
+font-size: 14px;
+}
+
+.button2{
+font-size: 14px;
+}
+
+.button3{
+font-size: 14px;
+}
+
+.button4{
+font-size: 14px;
+}
+
+.textcontainer{
+font-size: 16px;
+}
+
+.header{
+font-size: 26px;
+}
+
+}
+
 @media screen and (max-width: 922px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
-    .button1 {
-        left: 0;
-    }
-    .button2 {
-        right: 0;
-        left: 0;
-    }
-    .button3 {
-        left: 0;
-    }
-    .button4 {
-        right: 0;
-    }
+    
 
     .logoside {
         display: none;
@@ -470,10 +513,69 @@ src: url(../fonts/SourceCodePro-Light.otf.woff);
     .bluestripe2 {
         width: 100vw;
     }
+
+    .row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .row2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .webcontainer {
+        width: 100%;
+    }
+
+    .linkcontainer {
+        width: 100%;
+        height: 54px;
+    }
+
+    .extra {
+        display: none;
+    }
+
+    .button2 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+    }
+
+    .button3 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+    }
+    .button4 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+    }
+
+    .textcontainer {
+        width: 90%;
+    }
+    .printcontainer {
+        width: 90%;
+    }
+    .circlescontainer {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 850px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
     .buttoncontainer{
         gap: 2%;
+    }
+
+     .linkcontainer {
+        width: 100%;
+       
     }
 }

@@ -50,11 +50,21 @@ z-index: 3;
 white-space: nowrap;
 }
 
+@keyframes scroll{
+0% {
+transform: translateY(0%);
+}
+100% {
+transform: translateY(80vw);
+}
+}
+
+
 .logocontainer{
 width: 20vw;
 aspect-ratio: 1/1;
-background-image: linear-gradient(to top, #30486C, #30486C, #9eabb5, #9eabb5);
 animation: scroll 25s linear infinite;
+background-image: linear-gradient(to top, #30486C, #30486C, #9eabb5, #9eabb5);
 }
 
 .darkblue {
@@ -71,21 +81,13 @@ height: 100%;
 background-image: url(img/raydotnetlogo_lightblue.svg);
 background-size: 100%;
 background-position: center;
-
 }
 
 .offwhite{
 background-image: url(img/raydotnetlogo_offwhite.svg);
 }
 
-@keyframes scroll{
-0% {
-transform: translateY(0%);
-}
-100% {
-transform: translateY(80vw);
-}
-}
+
 
 .contentcontainer{
 width: 80vw;
@@ -155,24 +157,76 @@ align-items: center;
 padding-left: 4%;
 color: #0D2E46;
 border-bottom: 1px solid #5C7FB5;
+}
+
+.projectcontainer{
+width: 100%;
+height: calc(100% - 90px);
+border-radius: 20px;
+overflow-y: scroll;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+padding-bottom: 30px;
+}
+
+.row {
+width: 94%;
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 3%;
+padding: 3% 3% 0% 3%;
+justify-content: flex-start;
+align-content: flex-start;
+}
+
+.printcontainer{
+width: 45%;
+aspect-ratio: 1/1;
+
+z-index: 5;
 
 }
 
-.buttoncontainer{
-width: 94%;
-height: calc(100% - 60px);
+.printcontainer img {
+    width: 100%;
+}
+
+.webcontainer{
+width: 75%;
+aspect-ratio: 16/9;
+
+
+z-index: 5;
+
+}
+
+.webcontainer img {
+    width: 100%;
+}
+
+.linkcontainer {
+max-height: 84%;
+width: 20%;
+
+z-index: 5;
+
 display: flex;
-flex-wrap: wrap;
-align-content: flex-start;
-justify-content: space-between;
-gap: 10%;
-padding: 3%;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+gap: 5%;
 }
 
 .button1{
-width: 174px;
-height: 42px;
-min-height: 42px;
+padding: 0% 5%;
+width: 90%;
+height: 15%;
+min-height: 40px;
+height: 40px;
 background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -184,10 +238,8 @@ border-top: 1px solid #D9CDBF;
 display: flex;
 justify-content: center;
 align-items: center;
-position: relative;
 user-select: none;
 }
-
 
 .button1:hover{
 background-image:none;
@@ -196,43 +248,15 @@ color: #D9CDBF;
 border-left: 1px solid #D9CDBF;
 border-right: 1px solid #D9CDBF;
 border-bottom: 1px solid #D9CDBF;
-cursor: url(img/404.gif), pointer;
+cursor: pointer;
 }
-
 
 .button2{
-width: 274px;
-height: 42px;
-min-height: 42px;
-background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
-border-radius: 20px;
-font-family: 'SourceCodeLight';
-font-size: 18px;
-border-left: 1px solid #473D37;
-border-right: 1px solid #473D37;
-border-bottom: 1px solid #473D37;
-border-top: 1px solid #B3A28D;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-
-}
-
-.button2:hover{
-background-image:none;
-background-color: #473D37;
-color: #D9CDBF;
-border-left: 1px solid #D9CDBF;
-border-right: 1px solid #D9CDBF;
-border-bottom: 1px solid #D9CDBF;
-cursor: url(img/404.gif), pointer;
-}
-
-.button3{
-width: 174px;
-height: 42px;
-min-height: 42px;
+padding: 0% 5%;
+height: 15%;
+min-height: 40px;
+height: 90px;
+width: 90%;
 background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
@@ -244,11 +268,10 @@ border-top: 1px solid #B3A28D;
 display: flex;
 justify-content: center;
 align-items: center;
-position: relative;
 
 }
 
-.button3:hover{
+.button2:hover{
 background-image:none;
 background-color: #473D37;
 color: #D9CDBF;
@@ -258,33 +281,15 @@ border-bottom: 1px solid #D9CDBF;
 cursor: pointer;
 }
 
-.button4{
-width: 174px;
-height: 42px;
-min-height: 42px;
-background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
-border-radius: 20px;
+.textcontainer{
+
+width: calc(45% - 40px);
 font-family: 'SourceCodeLight';
 font-size: 18px;
-border-left: 1px solid #473D37;
-border-right: 1px solid #473D37;
-border-bottom: 1px solid #473D37;
-border-top: 1px solid #D9CDBF;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-
-}
-
-.button4:hover{
-background-image:none;
+padding: 20px;
+text-align: left;
 background-color: #473D37;
 color: #D9CDBF;
-border-left: 1px solid #D9CDBF;
-border-right: 1px solid #D9CDBF;
-border-bottom: 1px solid #D9CDBF;
-cursor: url(img/404.gif), pointer;
 }
 
 .circlescontainer{
@@ -315,20 +320,63 @@ font-family: 'SourceCodeLight';
 src: url(fonts/SourceCodePro-Light.otf.woff);
 }
 
+
+@media screen and (max-width: 1360px){
+.button1{
+font-size: 16px;
+}
+
+.button2{
+font-size: 16px;
+}
+
+.button3{
+font-size: 16px;
+}
+
+.button4{
+font-size: 16px;
+}
+
+.textcontainer{
+font-size: 16px;
+}
+
+.header{
+font-size: 28px;
+}
+
+}
+
+@media screen and (max-width: 1120px){
+.button1{
+font-size: 14px;
+}
+
+.button2{
+font-size: 14px;
+}
+
+.button3{
+font-size: 14px;
+}
+
+.button4{
+font-size: 14px;
+}
+
+.textcontainer{
+font-size: 16px;
+}
+
+.header{
+font-size: 26px;
+}
+
+}
+
 @media screen and (max-width: 922px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
-    .button1 {
-        left: 0;
-    }
-    .button2 {
-        right: 0;
-        left: 0;
-    }
-    .button3 {
-        left: 0;
-    }
-    .button4 {
-        right: 0;
-    }
+    
 
     .logoside {
         display: none;
@@ -344,10 +392,83 @@ src: url(fonts/SourceCodePro-Light.otf.woff);
     .bluestripe2 {
         width: 100vw;
     }
+
+    .row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .row2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .webcontainer {
+        width: 100%;
+    }
+
+    .linkcontainer {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .extra {
+        display: none;
+    }
+
+    .button2 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+    }
+
+    .button3 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+    }
+    .button4 {
+        height: 15%;
+        min-height: 40px;
+        height: 40px;
+    }
+
+    .textcontainer {
+        width: 94.5%;
+    }
+    .printcontainer {
+        width: 100%;
+    }
+    .circlescontainer {
+        display: none;
+    }
+    .projectcontainer {
+        gap: 10px;
+        
+        height: calc(100% - 90px);
+    }
+   
 }
 
 @media screen and (max-width: 850px){ /*600px- typical breakpoint for phones; mobile first approach- going from smallest screen size to largest and using min-width instead of max-width*/ 
     .buttoncontainer{
         gap: 2%;
+    }
+
+    
+
+     .linkcontainer {
+        width: 100%;
+        gap: 10px;
+        
+    }
+
+    .textcontainer {
+        width: 89.5%;
     }
 }
