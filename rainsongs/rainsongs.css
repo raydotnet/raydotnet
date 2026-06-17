@@ -63,14 +63,14 @@ transform: translateY(980vw);
 .logocontainer{
 width: 20vw;
 aspect-ratio: 1/1;
-animation: scroll 90s linear infinite;
+animation: scroll 110s linear infinite;
 background-image: linear-gradient(to top, #30486C, #30486C, #9eabb5, #9eabb5);
 
 }
 .logocontainertwo{
 width: 20vw;
 height: 40vw;
-animation: scroll 90s linear infinite;
+animation: scroll 110s linear infinite;
 background-image: linear-gradient(to top, #30486C, #30486C, #9eabb5, #9eabb5);
 
 }

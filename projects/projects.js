@@ -1,17 +1,17 @@
 function openCrunchit(){
-window.open("../crunchitdoc/combotemplate.html", "_self")
+window.open("../crunchitdoc/crunchitdoc.html", "_self")
 }
 
 function openRayland(){
-window.open("../rayland/printtemplate.html", "_self")
+window.open("../rayland/rayland.html", "_self")
 }
 
 function openFruits(){
-    window.open("../fruits/combotemplate.html", "_self")
+    window.open("../fruits/fruits.html", "_self")
 }
 
 function openSuspicious(){
-    window.open("../suspiciousapplegallery/webtemplate.html", "_self")
+    window.open("../suspiciousapplegallery/suspicious.html", "_self")
 }
 
 function openWindsongs(){
