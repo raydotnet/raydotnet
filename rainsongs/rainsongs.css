@@ -45,7 +45,7 @@ align-items: center;
 justify-content: flex-end;
 gap: 0;
 border-right: 1px solid #30486C;
-box-shadow: 5px 0px 20px #30486C;
+box-shadow: 2px 0px 10px #30486C;
 z-index: 3;
 white-space: nowrap;
 }
@@ -63,14 +63,14 @@ transform: translateY(980vw);
 .logocontainer{
 width: 20vw;
 aspect-ratio: 1/1;
-animation: scroll 110s linear infinite;
+animation: scroll 200s linear infinite;
 background-image: linear-gradient(to top, #30486C, #30486C, #9eabb5, #9eabb5);
 
 }
 .logocontainertwo{
 width: 20vw;
 height: 40vw;
-animation: scroll 110s linear infinite;
+animation: scroll 200s linear infinite;
 background-image: linear-gradient(to top, #30486C, #30486C, #9eabb5, #9eabb5);
 
 }
@@ -273,7 +273,7 @@ background-image: url(../img/raydotnetlogo_offwhite.svg);
 .contentcontainer{
 width: 80vw;
 height: 100vh;
-background-image: linear-gradient(to top, #5C7FB5, #5C7FB5, #ADC8DE, #ADC8DE);
+background-image: linear-gradient(to top, #5C7FB5, #ADC8DE, #ADC8DE, #ADC8DE);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -315,13 +315,10 @@ top: 28%;
 width: 85%;
 height: 80%;
 border-radius: 20px;
-background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
-border-left: 1px solid #30486C;
-border-right: 1px solid #30486C;
-border-bottom: 1px solid #30486C;
-border-top: 1px solid #5C7FB5;
+background-color: #d9e2f1;
+
 z-index: 5;
-box-shadow: 0px 10px 10px 5px #30486C;
+box-shadow: 0px 7px 7px 2px #30486C;
 margin: 0;
 }
 
@@ -331,13 +328,13 @@ height: 60px;
 background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
 border-radius: 20px 20px 0px 0px;
 font-family: 'AmberWide';
-font-size: 30px;
+font-size: 26px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding-left: 4%;
 color: #0D2E46;
-border-bottom: 1px solid #5C7FB5;
+border-bottom: 1px solid #ADC8DE;
 }
 
 .projectcontainer{
@@ -360,7 +357,7 @@ flex-direction: row;
 flex-wrap: wrap;
 gap: 3%;
 padding: 3% 3% 0% 3%;
-justify-content: center;
+justify-content: flex-start;
 align-content: flex-start;
 }
 
@@ -372,15 +369,17 @@ flex-direction: row;
 flex-wrap: wrap;
 gap: 3%;
 padding: 3% 3% 0% 3%;
-justify-content: flex-end;
+justify-content: flex-start;
 align-content: flex-start;
 }
 
 .webcontainer{
 width: 75%;
 aspect-ratio: 1920/948;
-
 z-index: 5;
+border-radius: 10px;
+overflow: hidden;
+
 }
 
 .webcontainer video {
@@ -403,23 +402,23 @@ gap: 5%;
 }
 
 .button1{
-padding: 0% 5%;
-width: 90%;
-height: 15%;
+padding: 0px 20px;
+width: calc(100% - 40px);
 min-height: 40px;
 height: 40px;
 background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
-font-size: 18px;
-border-left: 1px solid #473D37;
-border-right: 1px solid #473D37;
-border-bottom: 1px solid #473D37;
+font-size: 16px;
+border-left: 1px solid #958673;
+border-right: 1px solid #958673;
+border-bottom: 1px solid #958673;
 border-top: 1px solid #D9CDBF;
 display: flex;
 justify-content: center;
 align-items: center;
 user-select: none;
+color: #352e29;
 }
 
 .button1:hover{
@@ -465,18 +464,29 @@ cursor: pointer;
 .textcontainer{
 
 width: calc(51% - 40px);
-font-family: 'SourceCodeLight';
+height: 90px;
+/*background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);*/
+z-index: 5;
+/*box-shadow: 0px 10px 10px 5px #30486C;*/
+font-family: 'AmberWide';
 font-size: 18px;
-padding: 20px;
 text-align: left;
-background-color: #473D37;
-color: #D9CDBF;
+color: #0D2E46;
+background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #ADC8DE, #d9e2f1);
+border-left: 1px solid #5C7FB5;
+border-right: 1px solid #5C7FB5;
+border-bottom: 1px solid #5C7FB5;
+border-top: 1px solid #ADC8DE;
+user-select: none;
+padding: 20px;
+border-radius: 10px;
 }
 
 .printcontainer{
 width: 45%;
 aspect-ratio: 2024/1650;
-
+border-radius: 10px;
+overflow: hidden;
 
 z-index: 5;
 
@@ -518,19 +528,19 @@ src: url(../fonts/SourceCodePro-Light.otf.woff);
 
 @media screen and (max-width: 1360px){
 .button1{
-font-size: 16px;
+font-size: 15px;
 }
 
 .button2{
-font-size: 16px;
+font-size: 15px;
 }
 
 .button3{
-font-size: 16px;
+font-size: 15px;
 }
 
 .button4{
-font-size: 16px;
+font-size: 15px;
 }
 
 .textcontainer{
@@ -538,7 +548,7 @@ font-size: 16px;
 }
 
 .header{
-font-size: 28px;
+font-size: 26px;
 }
 
 }

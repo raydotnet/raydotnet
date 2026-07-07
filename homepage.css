@@ -45,7 +45,7 @@ align-items: center;
 justify-content: flex-end;
 gap: 0;
 border-right: 1px solid #30486C;
-box-shadow: 5px 0px 20px #30486C;
+box-shadow: 2px 0px 10px #30486C;
 z-index: 3;
 white-space: nowrap;
 }
@@ -72,7 +72,7 @@ background-image: linear-gradient(to top, #0D2E46, #0D2E46, #6e8290, #6e8290);
 }
 
 .darkbrown {
-background-image: linear-gradient(to top, #473D37, #473D37, #918b87, #918b87);
+background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
 }
 
 .logo {
@@ -92,7 +92,7 @@ background-image: url(img/raydotnetlogo_offwhite.svg);
 .contentcontainer{
 width: 80vw;
 height: 100vh;
-background-image: linear-gradient(to top, #5C7FB5, #5C7FB5, #ADC8DE, #ADC8DE);
+background-image: linear-gradient(to top, #5C7FB5, #ADC8DE, #ADC8DE, #ADC8DE);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -134,13 +134,10 @@ top: 28%;
 width: 85%;
 height: 80%;
 border-radius: 20px;
-background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
-border-left: 1px solid #30486C;
-border-right: 1px solid #30486C;
-border-bottom: 1px solid #30486C;
-border-top: 1px solid #5C7FB5;
+background-color: #d9e2f1;
+
 z-index: 5;
-box-shadow: 0px 10px 10px 5px #30486C;
+box-shadow: 0px 7px 7px 2px #30486C;
 margin: 0;
 }
 
@@ -150,13 +147,13 @@ height: 60px;
 background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
 border-radius: 20px 20px 0px 0px;
 font-family: 'AmberWide';
-font-size: 30px;
+font-size: 26px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 padding-left: 4%;
 color: #0D2E46;
-border-bottom: 1px solid #5C7FB5;
+border-bottom: 1px solid #ADC8DE;
 }
 
 .projectcontainer{
@@ -181,6 +178,53 @@ gap: 3%;
 padding: 3% 3% 0% 3%;
 justify-content: flex-start;
 align-content: flex-start;
+}
+
+.tutorial {
+width: 81%;
+border-radius: 10px;
+font-family: 'AmberWide';
+font-size: 18px;
+text-align: center;
+color: #30486C;
+background-image: linear-gradient(to top, #ADC8DE, #ADC8DE, #d9e2f1, #d9e2f1);
+padding-top: 10px;
+padding-bottom: 10px;
+border-left: 1px solid #5C7FB5;
+border-right: 1px solid #5C7FB5;
+border-bottom: 1px solid #5C7FB5;
+border-top: 1px solid #ADC8DE;
+user-select: none;
+}
+
+.project {
+width: 25%;
+aspect-ratio: 3/4;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+
+gap: 10px;
+}
+
+.thumbnail {
+width: 100%;
+aspect-ratio: 1/1;
+border-radius: 10px;
+background-color: #ADC8DE;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #ADC8DE;
+border-left: 1px solid #5C7FB5;
+border-right: 1px solid #5C7FB5;
+border-bottom: 1px solid #5C7FB5;
+}
+
+.thumbnail img {
+    width: 100%;
 }
 
 .printcontainer{
@@ -222,23 +266,23 @@ gap: 5%;
 }
 
 .button1{
-padding: 0% 5%;
-width: 90%;
-height: 15%;
+padding: 0px 20px;
+width: calc(100% - 40px);
 min-height: 40px;
 height: 40px;
 background-image: linear-gradient(to top, #D9CDBF, #D9CDBF, #f0ebe5, #f0ebe5);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
-font-size: 18px;
-border-left: 1px solid #473D37;
-border-right: 1px solid #473D37;
-border-bottom: 1px solid #473D37;
+font-size: 16px;
+border-left: 1px solid #958673;
+border-right: 1px solid #958673;
+border-bottom: 1px solid #958673;
 border-top: 1px solid #D9CDBF;
 display: flex;
 justify-content: center;
 align-items: center;
 user-select: none;
+color: #352e29;
 }
 
 .button1:hover{
@@ -252,15 +296,14 @@ cursor: pointer;
 }
 
 .button2{
-padding: 0% 5%;
-height: 15%;
+padding: 0px 20px;
+width: calc(100% - 40px);
 min-height: 40px;
-height: 90px;
-width: 90%;
+height: 40px;
 background-image: linear-gradient(to top, #B3A28D, #B3A28D, #D9CDBF, #D9CDBF);
 border-radius: 20px;
 font-family: 'SourceCodeLight';
-font-size: 18px;
+font-size: 16px;
 border-left: 1px solid #473D37;
 border-right: 1px solid #473D37;
 border-bottom: 1px solid #473D37;
@@ -268,7 +311,7 @@ border-top: 1px solid #B3A28D;
 display: flex;
 justify-content: center;
 align-items: center;
-
+color: #26211e;
 }
 
 .button2:hover{
@@ -279,6 +322,10 @@ border-left: 1px solid #D9CDBF;
 border-right: 1px solid #D9CDBF;
 border-bottom: 1px solid #D9CDBF;
 cursor: pointer;
+}
+
+.taller {
+    height: 70px;
 }
 
 .textcontainer{
@@ -323,11 +370,11 @@ src: url(fonts/SourceCodePro-Light.otf.woff);
 
 @media screen and (max-width: 1360px){
 .button1{
-font-size: 16px;
+font-size: 15px;
 }
 
 .button2{
-font-size: 16px;
+font-size: 15px;
 }
 
 .button3{
@@ -343,7 +390,7 @@ font-size: 16px;
 }
 
 .header{
-font-size: 28px;
+font-size: 26px;
 }
 
 }

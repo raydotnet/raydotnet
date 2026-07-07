@@ -55,7 +55,7 @@ white-space: nowrap;
 transform: translateY(0%);
 }
 100% {
-transform: translateY(160vw);
+transform: translateY(140vw);
 }
 }
 
