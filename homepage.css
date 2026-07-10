@@ -199,7 +199,7 @@ user-select: none;
 
 .project {
 width: 25%;
-aspect-ratio: 3/4;
+/*aspect-ratio: 3/4;*/
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -440,19 +440,30 @@ font-size: 26px;
         width: 100vw;
     }
 
+    .tutorial {
+        width: 100%;
+    }
+
     .row {
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         gap: 20px;
+        
     }
 
     .row2 {
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
+        
+    }
+
+    .project {
+        width: 50%;
+        
     }
 
     .webcontainer {
@@ -517,5 +528,9 @@ font-size: 26px;
 
     .textcontainer {
         width: 89.5%;
+    }
+
+    .project {
+        width: 100%;
     }
 }
